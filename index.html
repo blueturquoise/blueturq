@@ -4,13 +4,45 @@
 </script>
 <style>
   body {
-  background: blue
+  text-align: center;
+  background: burlywood;
+  font-family: 'Open Sans Condensed', sans-serif;
     }
+
+  #topHalf{
+      background: burlywood;
+      min-height: 50%;
+      min-width: 100%;
+  }
+
+  #bottomHalf{
+      background: black;
+      min-height: 50%;
+      min-width: 100%;
+  }
+
+#rotator img {
+-webkit-transition: all 1s ease-in-out;
+-moz-transition: all 1s ease-in-out;
+-o-transition: all 1s ease-in-out;
+-ms-transition: all 1s ease-in-out;
+}
+
+#rotator img:hover {
+-webkit-transform: rotate(360deg);
+-moz-transform: rotate(360deg);
+-o-transform: rotate(360deg);
+-ms-transform: rotate(360deg);
+}
 </style>
 <head>
-    <h1>Work in progress</h1>
 </head>
 <body>
-    <p1></p1>
+    <div id="topHalf"></div>
+    <div id="rotator"><img src="https://i.imgur.com/UK2mUsf.png" alt="Flowers in Chania"></div>
+    <div id="bottomHalf"></div>
+    <div id="selfIMG">
+        <img src="https://imgur.com/a/IR5S496" alt="Flowers in Chania">
+    </div>
 </body>
 </html>
